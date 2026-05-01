@@ -1,52 +1,176 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Valoriza-se</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valoriza-se</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0b1c2c;
-      color: white;
-      text-align: center;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #071827;
+  color: white;
+}
 
-    header {
-      padding: 40px 20px;
-    }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+}
 
-    h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
+nav img {
+  height: 50px;
+}
 
-    p {
-      font-size: 18px;
-      max-width: 600px;
-      margin: 0 auto 30px;
-    }
+nav a {
+  color: #ccc;
+  margin-left: 20px;
+  text-decoration: none;
+}
 
-    .btn {
-      background: gold;
-      color: black;
-      padding: 15px 30px;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
-    }
-  </style>
+header {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+header img {
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+p {
+  color: #ccc;
+  max-width: 600px;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  background: gold;
+  color: black;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+section {
+  padding: 80px 8%;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.about img {
+  width: 300px;
+  border-radius: 15px;
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #999;
+}
+</style>
 </head>
 
 <body>
 
+<nav>
+  <img src="logo.png">
+  <div>
+    <a href="#sobre">Sobre</a>
+    <a href="#areas">Áreas</a>
+    <a href="#conteudos">Conteúdos</a>
+  </div>
+</nav>
+
 <header>
+  <img src="logo.png">
   <h1>VALORIZA-SE</h1>
   <p>Você não foi criado para viver sem direção.</p>
   <a href="#" class="btn">Começar agora</a>
 </header>
+
+<section id="sobre">
+  <div class="about">
+    <img src="sarah.jpg">
+    <div class="about-text">
+      <h2>Sobre a Plataforma</h2>
+      <p>
+        O Valoriza-se é uma plataforma criada para ajudar pessoas a crescerem por dentro,
+        desenvolverem sua fé, fortalecerem sua mentalidade e encontrarem propósito.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="areas">
+  <h2>Áreas</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Espiritualidade</h3>
+      <p>Fortaleça sua fé e identidade.</p>
+    </div>
+    <div class="card">
+      <h3>Desenvolvimento</h3>
+      <p>Disciplina, hábitos e crescimento.</p>
+    </div>
+    <div class="card">
+      <h3>Relacionamentos</h3>
+      <p>Construa conexões saudáveis.</p>
+    </div>
+    <div class="card">
+      <h3>Propósito</h3>
+      <p>Descubra sua direção.</p>
+    </div>
+  </div>
+</section>
+
+<section id="conteudos">
+  <h2>Conteúdos</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Devocionais</h3>
+    </div>
+    <div class="card">
+      <h3>Vídeos</h3>
+    </div>
+    <div class="card">
+      <h3>Estudos</h3>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Valoriza-se
+</footer>
 
 </body>
 </html>
